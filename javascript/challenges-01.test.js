@@ -73,6 +73,17 @@ const greeting = (word) => {
 const speaker = (words, callback) => {
   // Solution code here...
 };
+const greeting = (word) => {
+  return word.toUpperCase() + "!";
+  };
+  
+  const speaker = (words, callback) => {
+  let newWords = [];
+  words.forEach((word) => {
+  newWords.push(callback(word));
+  });
+  return newWords;
+  };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
