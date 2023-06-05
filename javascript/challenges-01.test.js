@@ -53,7 +53,7 @@ const allUpperCase = (arr) => {
   result.push(str.toUpperCase());
   });
   return result;
-  };
+  
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
