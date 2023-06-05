@@ -68,9 +68,6 @@ const greeting = (word) => {
   // Solution code here...
 };
 
-const speaker = (words, callback) => {
-  // Solution code here...
-};
 const greeting = (word) => {
   return word.toUpperCase() + "!";
   };
@@ -103,9 +100,15 @@ const addValues = (arr, value) => {
   // Solution code here...
 };
 
+arr.push(value);
+
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+for (let i = 0; i < times; i++) {
+callback(arr, num);
+}
+return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 
